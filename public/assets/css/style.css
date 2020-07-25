@@ -13,14 +13,42 @@ body {
 
 .container {
   width: 100vw;
-  height: 100vh;
   max-width: 1280px;
   margin: auto;
-  display: grid;
-  align-items: center;
-  justify-content: center;
+  display: flex;
 }
 
-.container p {
-  font-size: 10vmax;
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 25vw;
+}
+
+.sidebar .summary {
+  height: 25vh;
+}
+
+.sidebar .summary div {
+  padding: 10px;
+}
+
+.sidebar .menu {
+  height: 75vh;
+}
+
+.sidebar .menu nav ul {
+  display: flex;
+  height: 75vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.menu nav li {
+  list-style: none;
+}
+
+.menu nav li a {
+  text-decoration: none;
+  cursor: pointer;
 }
